@@ -5,4 +5,4 @@
 
 cd $SERVER_HOME
 # run sync-server
-./local/bin/gunicorn --paste $CONFIG_HOME/syncserver.ini
+./local/bin/gunicorn --access-logfile=- --error-logfile=- --paste $CONFIG_HOME/syncserver.ini
